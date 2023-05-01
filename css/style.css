@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: #d6ccc2;
+}
+
+section{
+    margin: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Menu */
+
+
+.menu-contendor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+    
+}
+
+.menu-titulo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 8px;
+}
+
+.menu-titulo h3{
+    font-weight: 700;
+}
+
+.menu-nav{
+    display: none;
+    
+}
+
+.menu-nav-item-c{
+    margin-right: 8px;
+    list-style: none;
+    transition: .5s;
+    
+}
+.menu-nav-item-c:hover{
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 4px 4px 8px 0 rgba(251, 195, 12, 0.927);
+    
+}
+
+.menu-nav-item-c a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+
+
+/* Title */
+
+.title-img{
+    width: 98px;
+    margin-bottom: 20px;
+}
+
+.title-contenedor h1{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    margin: 18px 0;
+}
+.title-contenedor p{
+    margin: 14px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.menu-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin: 25px 0;
+    
+}
+
+.menu-list li{
+    list-style: none;
+}
+
+
+
+.menu-list a{
+    text-decoration: none;
+    color: black;
+    transition: .4s;
+}
+
+.menu-list a:hover{
+    border-bottom: 1px solid red;
+    
+}
+
+
+
+/* About Me */
+/* 
+.about-container{
+
+} */
+
+.about-container h2{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    margin: 18px 0;
+}
+
+.about-container p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 14px 0;
+}
+
+.about-container img{
+    width: 20%;
+    margin: 10px 0 10px 10px;
+}
+
+
+
+/* SKILLS */
+
+.contendor-skills{
+    width: 100%;
+    
+}
+
+.contenedor-skills h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contenedor-skills .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    transition: .5s;
+    
+}
+
+
+
+.contenedor-skills .card .individual{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 156px;
+    height: 118px;
+    background-color: white;
+    padding: 16px;
+    margin: 22px 0;
+    border-radius: 20px;
+
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+.contenedor-skills .card .individual:hover{
+    box-shadow: 4px 4px 8px 0 rgba(251, 195, 12, 0.927);
+    width: 160px;
+    height: 125px;
+}
+
+
+
+/* HOBBIES */
+
+.contenedor-hobbies{
+    width: 100%;
+}
+.contenedor-hobbies h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-hobbies .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.contenedor-hobbies .individual{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 156px;
+    height: 118px;
+    background-color: white;
+    padding: 16px;
+    margin: 22px 0;
+    border-radius: 20px;
+
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+.contenedor-hobbies .individual:hover{
+    box-shadow: 4px 4px 8px 0 rgba(251, 195, 12, 0.927);
+    width: 160px;
+    height: 125px;
+}
+
+
+
+
+/* FORMACION */
+
+.contenedor-formacion{
+    width: 100%;
+}
+
+.contenedor-formacion h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-formacion .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contenedor-formacion .individual{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    padding: 16px;
+    margin: 22px 0;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.contenedor-formacion .individual:hover{
+    box-shadow: 0 4px 8px 0  rgba(251, 195, 12, 0.927);;
+
+}
+
+
+/* EXPERIENCIA */
+
+.contenedor-experiencia{
+    width: 100%;
+}
+
+.contenedor-experiencia h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.625rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contenedor-img {
+    width: 100%;
+}
+.contenedor-img img{
+    width: 100%;
+}
+
+.proyectos .texto h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 13px 0;
+}
+.proyectos .texto p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 14px 0;
+}
+
+.proyectos .botones{
+    display: flex;
+    gap: 10px;
+}
+.experiencia-repo a{
+    text-decoration: none;
+}
+
+
+.experiencia-repo button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid #2a7ae4;
+    background-color: #F5F5F5;
+    color: #2a7ae4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.experiencia-repo button:hover{
+    box-shadow: 0 4px 8px 0 rgba(251, 195, 12, 0.927);
+}
+
+
+.experiencia-demo a{
+    text-decoration: none;
+}
+
+.experiencia-demo button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid #2a7ae4;
+    background-color: #2a7ae4;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.experiencia-demo button:hover{
+    box-shadow: 0 4px 8px 0 rgba(251, 195, 12, 0.927);
+}
+
+/* CONTACTO */
+
+.contenedor-contacto{
+    width: 100%;
+}
+
+.contacto-img{
+    display: none;
+   
+}
+
+.contacto-doc h2{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 18px 0 0;
+}
+
+.contacto-doc h3{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.contacto-form input{
+    border: transparent;
+    margin: 5px 0;
+    height: 36px;
+    width: 80vw;
+}
+
+.contacto-form textarea{
+    border: transparent;
+    margin: 5px 0;
+    height: 96px;
+    width: 80vw;
+
+}
+.contacto-form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid #2a7ae4;
+    background-color: #2a7ae4;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    margin: 18px 0;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.contacto-form button:hover{
+    box-shadow: 0 4px 8px 0 rgba(251, 195, 12, 0.927);
+}
+
+
+.footer{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 700px) {
+    section{
+        margin: 32px ;
+    }
+
+    .title{
+        margin-bottom: 32px;
+    }
+
+    .title-div{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+
+    .title-img{
+        width: 164px;
+        margin-left: 32px;
+    }
+
+    .title-contenedor{
+        width: 524px;
+    }
+
+    .about-container img{
+        width: 15%;
+        margin: 10px 0;
+    }
+
+    .contenedor-skills .card{
+        width: 100%;
+        gap: 50px;
+    }
+
+    .contenedor-hobbies .card{
+        width: 100%;
+        gap: 50px ;
+    }
+
+    .contenedor-formacion .card{
+        width: 100%;
+        gap: 60px ;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    section{
+        margin: 32px;
+    }
+
+    .menu-nav{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        width: 600px;
+        
+    }
+
+    .menu-nav-item{
+        list-style: none;
+        
+    }
+
+    .menu-nav-item a{
+        text-decoration: none;
+        color: #212121;
+        transition: .4s;
+    }
+
+    .menu-nav-item a:hover{
+        border-bottom: 1px solid red; 
+    }
+        
+
+    .menu-nav-item-c{
+        display: none;
+    }
+
+    .title-img{
+        width: 368px;
+    }
+    .title-contenedor{
+        width: 751px;
+    }
+    .title-contenedor h1{
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .title-contenedor p{
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .menu-list{
+        display: flex;
+        margin-left: -65px;
+        font-size: 16px;
+    }
+    .about-container{
+        padding: 6px 50px;
+        height: 255px;
+    }
+    .contenedor-skills{
+        width: 100%;
+    }
+    .contenedor-skills h2{
+        font-size: 32px;
+    }
+    .contenedor-skills .card{
+        width: 100%;
+        gap: 150px;
+    }
+
+    .contenedor-hobbies{
+        width: 100%;
+    }
+
+    .contenedor-hobbies h2{
+        font-size: 32px;
+    }
+
+    .contenedor-hobbies .card{
+        width: 100%;
+        gap: 100px;
+    }
+
+    .formacion{
+        margin-top: 82px;
+    }
+
+    .contenedor-formacion h2{
+        font-size: 32px;
+    }
+
+    .contenedor-formacion .card{
+        width: 100%;
+        gap: 150px
+    }
+
+    .experiencia{
+        margin-top: 70px;
+    }
+
+    .contenedor-experiencia h2{
+        font-size: 32px;
+    }
+
+    .contenedor-experiencia .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .contenedor-img{
+        width: 50%;
+    }
+
+    .contenedor-contacto{
+        display: flex;
+        align-items: center;
+    }
+
+    .contacto-img{
+        display: block;
+    }
+
+    .contacto-doc{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-top: -2%;
+    }
+
+    .contacto-form input{
+        width: 50vw;
+    }
+
+    .contacto-form textarea{
+        width: 50vw;
+    }
+
+    .footer{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        
+    }
+}
+
+
